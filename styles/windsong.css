@@ -1,0 +1,246 @@
+﻿/**,
+*:after,
+*::before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}*/
+
+html,
+body,
+.wrapper,
+.carousel,
+.content {
+	height: 100%;
+    margin: 0; 
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper
+{
+    background-color: #F5F5F5; 
+}
+
+.carousel,
+.content
+{
+    float: left; 
+    min-height: 100%;
+    height: 100%; 
+}
+
+.carousel
+{
+    width: 66%; 
+    /*min-height: 100%;*/ 
+    overflow: hidden; 
+    z-index: 0; 
+    background-color: #4B4B4D; 
+    background-size: contain;  
+}
+
+.content
+{
+    position: relative; 
+    width: 34%; 
+    z-index: 0; 
+    background-image: url(../images/content1.png); 
+    background-size: cover; 
+}
+
+.title
+{
+    position: absolute; 
+    height: 20%;
+    width: 66%; 
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 100;  
+    transition: 0.5s; 
+}
+    .title:hover
+    {
+        cursor: pointer; 
+        background-color: rgba(255,153,51,0.8);  
+    }
+    .svgTitle
+    {
+        z-index: 10;          
+    }
+    /*.subtitle
+    {
+        width: 100%;
+        background-color: rgba(0,0,0,0.5); 
+        color: white;
+        font-family: Gabriola; 
+        font-size: 2em; 
+        position: absolute; 
+        bottom: 0; 
+        z-index: 10;
+        text-align: center; 
+        top: 2.5em;  
+    }*/
+
+    #logo
+    {
+        float: right;
+        width: 20%;
+        height: 100%; 
+    }
+
+
+.navigation,
+.text
+{
+    position: relative; 
+    width: auto;
+    /*min-height: 5em;*/
+    text-align: center;  
+    overflow: hidden; 
+    font-family: 'Dancing Script', Gabriola, cursive;
+    color: #4F8150;   
+}
+
+.navigation
+{
+    min-height: 20%;
+    max-height: 20%;
+    background-color: rgba(0,0,0,0.5);   
+}
+
+.navButton
+{
+    width: 33%;
+    height: 100%; 
+    background-color: #D2D3D5; 
+    float: left; 
+    opacity: 0.4; 
+    transition: 0.5s; 
+    font-family: Gabriola; 
+    background-size: contain; 
+    background-repeat: no-repeat;  
+}
+    .navButton h5
+    {
+        margin-top: 3.5em;
+        font-size: 1.2em; 
+        font-family: Gabriola; 
+    }
+    .navButton:hover
+    {
+        opacity: 1; 
+        cursor: pointer;
+        color: white; 
+        background-color: rgba(255,153,51,0.8);      
+    }
+
+#attractions
+{
+    background-image: url(../images/attractions.png);
+    margin-right: 0.30%; 
+    margin-right: 0.15%; 
+    margin-left: 0.15%; 
+}
+
+#accommodation
+{
+    background-image: url(../images/rates.png);
+    background-size: contain; 
+    margin-right: 0.3%;
+}
+
+#contact
+{
+    background-image: url(../images/contact.png);
+    margin-left: 0.30%; 
+}
+
+.text
+{    
+    background-size:cover; 
+    background-repeat: no-repeat;  
+    height: 65%;
+    width: 100%;  
+}
+
+#textWrapper
+{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    max-height: 50%;
+    margin: 10% 0 0 auto;  
+    overflow-y: auto; 
+    transition: 0.5s; 
+}
+
+#textWrapper:hover
+{
+    max-height: 100%; 
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
+}
+
+#description
+{
+    font-family: Gabriola; 
+    width: 80%; 
+    margin: auto; 
+    text-align: left; 
+    word-wrap:break-word;
+    word-spacing: normal; 
+    line-height: normal; 
+}
+
+    #description span
+    {
+        /*font-weight: bold;*/ 
+        font-size: 1em; 
+        color: white; 
+    }
+    #description .spantitle
+    {
+        /*font-weight: bold;*/ 
+        font-size: 1.5em; 
+    }
+
+/* JS Slider css */
+
+#slides 
+{
+    position: relative; 
+    overflow: hidden; 
+    max-width:150%;
+    width:130%;
+    max-height: 100%; 
+
+}
+
+    #slides img
+    {
+        /*width: 150%;*/ 
+    }
+
+.slidesjs-navigation {
+    position: absolute;
+    z-index: 999; /* Won't work without this; goes behind the images */
+}
+ 
+.slidesjs-previous {
+top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+left: 2%;
+}
+
+.slidesjs-next {
+top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+right: 25%;
+}
