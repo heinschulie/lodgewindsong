@@ -244,3 +244,139 @@ left: 2%;
 top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
 right: 25%;
 }
+
+
+/* media query for pad */
+
+@media screen and (max-width: 990px)
+{
+    html,
+    body,
+    .wrapper,
+    .carousel,
+    .title,
+    .content {
+	    width: 100%;
+        float: none;  
+        margin: 0; 
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .content
+    {
+        float: none;  
+        min-height: 100%; 
+    }
+
+    .title
+    {
+        position: absolute;
+        top: 0;  
+        height: 20%; 
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 100;  
+        transition: 0.5s; 
+    }
+        .title:hover
+        {
+            cursor: pointer; 
+            background-color: rgba(255,153,51,0.8);  
+        }
+}/* media query */
+
+ 
+/* media query for phone */
+
+@media screen and (max-width: 750px)
+{
+    html,
+    body,
+    .wrapper,
+    .carousel,
+    .title,
+    .content {
+	    width: 100%;
+        float: none;  
+        margin: 0; 
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .carousel
+    {
+        min-height: 60%;
+        max-height: 60%; 
+        height: 60%;
+    }
+
+    .content
+    {
+        background-position-y: top 20%; 
+    }
+
+    /*.navigation
+    {
+        margin-top: -20%;    
+    }*/
+
+    .title
+    {
+        position: absolute;
+        top: 0;  
+        height: 20%; 
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 100;  
+        transition: 0.5s; 
+    }
+        .title:hover
+        {
+            cursor: pointer; 
+            background-color: rgba(255,153,51,0.8);  
+        }
+}/* media query */
+
+ @media screen and (max-width: 480px)
+{
+    html,
+    body,
+    .wrapper,
+    .carousel,
+    .title,
+    .content {
+	    width: 100%;
+        float: none;  
+        margin: 0; 
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .carousel
+    {
+        min-height: 30%;
+        max-height: 30%; 
+        height: 30%;
+    }
+
+    .content
+    {
+        background-position-y: top 20%; 
+    }
+
+    .navigation
+    {
+        margin-top: 0;    
+    }
+
+    .title
+    {
+        position: absolute;
+        top: 0;  
+        height: 20%; 
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 100;  
+        transition: 0.5s; 
+    }
+        .title:hover
+        {
+            cursor: pointer; 
+            background-color: rgba(255,153,51,0.8);  
+        }
+}/* media query */

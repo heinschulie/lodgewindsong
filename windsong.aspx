@@ -8,6 +8,7 @@
         <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'/>
         <link href="styles/windsong.css" rel="stylesheet" />
         <link rel="shortcut icon" href="images/aloe.ico" />
+        <meta name="viewport" content="width=device-width" />
 </head>
 <body>
     <div id="wrapper" class="wrapper"><!-- this is the wrapper for the content -->
@@ -127,9 +128,11 @@
                         The caring hospitality of management team, Thys and Desiree Schoeman will ensure a stay comparable to the comfort of your own home, while their knowledge as qualified nature guides (FGASA Level 1), make for insightful information on the beautiful surroundings. Their priority is to conserve nature with passion and love: A dedication shared with their responsibility towards their guests.
                         <br />
                         “So, welcome the wind and the wisdom she offers.<br />
-                        Follow her summons when she calls again.<br /> 
+                        Follow her summons when she calls again.<br />
+
                         In your heart and your spirit, let the breezes surround you<br />
-                         Lift up your voice then and sing with the wind.”<br />
+
+                        Lift up your voice then and sing with the wind.”<br />
                         <br />
                         -John Denver, Windsong
                         <br />
