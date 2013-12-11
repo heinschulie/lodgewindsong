@@ -57,6 +57,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\10.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\12.jpg" />
+    <Content Include="images\13.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\binding_dark_%402X.png" />
+    <Content Include="images\irongrip_%402X.png" />
+    <Content Include="images\notebook_%402X.png" />
+    <Content Include="images\office_%402X.png" />
+    <Content Include="images\tex2res4_%402X.png" />
     <Content Include="windsong.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />

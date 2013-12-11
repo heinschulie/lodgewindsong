@@ -18,6 +18,7 @@ body,
 .wrapper
 {
     background-color: #F5F5F5; 
+    overflow: hidden; 
 }
 
 .carousel,
@@ -31,11 +32,10 @@ body,
 .carousel
 {
     width: 66%; 
-    /*min-height: 100%;*/ 
-    overflow: hidden; 
+    min-height: 100%; 
+    /*overflow: hidden;*/ 
     z-index: 0; 
     background-color: #4B4B4D; 
-    background-size: contain;  
 }
 
 .content
@@ -43,8 +43,8 @@ body,
     position: relative; 
     width: 34%; 
     z-index: 0; 
-    background-image: url(../images/content1.png); 
-    background-size: cover; 
+    background-image: url(../images/office_@2X.png); 
+    background-repeat: repeat;  
 }
 
 .title
@@ -63,21 +63,10 @@ body,
     }
     .svgTitle
     {
-        z-index: 10;          
+        z-index: 10; 
+        height: 100%;
+        width: 100%;          
     }
-    /*.subtitle
-    {
-        width: 100%;
-        background-color: rgba(0,0,0,0.5); 
-        color: white;
-        font-family: Gabriola; 
-        font-size: 2em; 
-        position: absolute; 
-        bottom: 0; 
-        z-index: 10;
-        text-align: center; 
-        top: 2.5em;  
-    }*/
 
     #logo
     {
@@ -96,14 +85,15 @@ body,
     text-align: center;  
     overflow: hidden; 
     font-family: 'Dancing Script', Gabriola, cursive;
-    color: #4F8150;   
+    color: #FFFFFF;   
 }
 
 .navigation
 {
     min-height: 20%;
     max-height: 20%;
-    background-color: rgba(0,0,0,0.5);   
+    background-image: url(../images/office_@2X.png);
+    z-index: 100; 
 }
 
 .navButton
@@ -134,7 +124,7 @@ body,
 
 #attractions
 {
-    background-image: url(../images/attractions.png);
+    /*background-image: url(../images/attractions.png);*/
     margin-right: 0.30%; 
     margin-right: 0.15%; 
     margin-left: 0.15%; 
@@ -142,22 +132,23 @@ body,
 
 #accommodation
 {
-    background-image: url(../images/rates.png);
+    /*background-image: url(../images/rates.png);*/
     background-size: contain; 
     margin-right: 0.3%;
 }
 
 #contact
 {
-    background-image: url(../images/contact.png);
+    /*background-image: url(../images/contact.png);*/
     margin-left: 0.30%; 
 }
 
 .text
 {    
+    background-image: url(../images/content4.png); 
     background-size:cover; 
     background-repeat: no-repeat;  
-    height: 65%;
+    height: 80%;
     width: 100%;  
 }
 
@@ -165,15 +156,15 @@ body,
 {
     background-color: rgba(0,0,0,0.7);
     width: 100%;
-    max-height: 50%;
-    margin: 10% 0 0 auto;  
+    max-height: 100%;
+    height: 50%; 
     overflow-y: auto; 
     transition: 0.5s; 
 }
 
 #textWrapper:hover
 {
-    max-height: 100%; 
+    height: 95% !important; 
 }
 
 ::-webkit-scrollbar {
@@ -192,13 +183,14 @@ body,
 
 #description
 {
-    font-family: Gabriola; 
+    font-family: 'Alegreya Sans', sans-serif; 
     width: 80%; 
     margin: auto; 
     text-align: left; 
     word-wrap:break-word;
     word-spacing: normal; 
     line-height: normal; 
+    font-size: 1.2em; 
 }
 
     #description span
@@ -210,46 +202,128 @@ body,
     #description .spantitle
     {
         /*font-weight: bold;*/ 
-        font-size: 1.5em; 
+        font-family: 'Dancing Script', Gabriola, cursive;
+        font-size: 1.2em; 
+        color: rgba(255,153,51,0.8);
     }
 
 /* JS Slider css */
 
 #slides 
 {
-    position: relative; 
-    overflow: hidden; 
-    max-width:150%;
-    width:130%;
-    max-height: 100%; 
-
+ 
 }
 
-    #slides img
+    .images
     {
-        /*width: 150%;*/ 
+
     }
+
+.slidesjs-container
+{
+    height: 100% !important; 
+}
+
+.slidesjs-container
+{
+    height: 100% !important; 
+}
 
 .slidesjs-navigation {
     position: absolute;
     z-index: 999; /* Won't work without this; goes behind the images */
+    opacity: 0.5;
+    transition: 0.5s; 
 }
  
-.slidesjs-previous {
-top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
-left: 2%;
+.slidesjs-navigation:hover
+{
+    opacity: 1; 
 }
 
-.slidesjs-next {
-top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
-right: 25%;
+.slidesjs-previous 
+{
+    top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+    left: 2%;
 }
 
+.slidesjs-next 
+{
+    top: 50%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+    right: 36%;
+}
 
+.zephry
+{
+    position: absolute; 
+    height: 2%;
+    width: 100%;
+    bottom: 0; 
+    background-image:url(../images/binding_dark_@2X.png);
+    transition: 0.5s; 
+}
+    .zephry:hover
+    {
+        height: 5%;
+    }
+#zdescription
+{
+    position: absolute;
+    font-family: 'Alegreya Sans', sans-serif; 
+    top: 20%; 
+    right: 15%; 
+    color: black; 
+    font-size: 0.8em; 
+}
+#zlink
+{
+    height: 60%;
+    width: 10%; 
+    fill: black;
+    position: absolute;
+    right: 5%; 
+    top: 20%; 
+    cursor: pointer; 
+}
+    #zlink:hover
+    {
+        fill: #F58634;  
+    }
+    #zlogo
+    {
+        fill: inherit;  
+    }
+
+    
 /* media query for pad */
 
-@media screen and (max-width: 990px)
+/*@media screen and (max-width: 990px)*/
+/* -----------Tablet View----------- */ 
+@media only screen and (max-width : 650px) and (min-width : 481px)
 {
+    /*::-webkit-scrollbar 
+    {
+    width: 12px;
+    }
+ 
+    ::-webkit-scrollbar-track 
+    {
+        -webkit-box-shadow: initial;  
+        border-radius: initial; 
+    }
+ 
+    ::-webkit-scrollbar-thumb 
+    {
+        border-radius: initial;
+        -webkit-box-shadow: initial; 
+    }*/
+
+    body
+    {       
+        height: 100.1%; 
+        overflow-y: auto;
+    }
+
     html,
     body,
     .wrapper,
@@ -265,7 +339,8 @@ right: 25%;
     .content
     {
         float: none;  
-        min-height: 100%; 
+        min-height: 100%;
+        margin-top: 50%;  
     }
 
     .title
@@ -282,7 +357,19 @@ right: 25%;
             cursor: pointer; 
             background-color: rgba(255,153,51,0.8);  
         }
-}/* media query */
+
+slidesjs-previous 
+{
+    top: 50%; 
+    left: 2%;
+}
+
+.slidesjs-next 
+{
+    top: 50%; 
+    right: 2%;
+}
+} /*media query*/ 
 
  
 /* media query for phone */
@@ -310,13 +397,13 @@ right: 25%;
 
     .content
     {
-        background-position-y: top 20%; 
+        margin-top: 70%;  
     }
 
-    /*.navigation
+    .navigation
     {
-        margin-top: -20%;    
-    }*/
+        margin-top: 20%;    
+    }
 
     .title
     {
@@ -362,7 +449,7 @@ right: 25%;
 
     .navigation
     {
-        margin-top: 0;    
+        margin-top: 30%;    
     }
 
     .title
@@ -379,4 +466,16 @@ right: 25%;
             cursor: pointer; 
             background-color: rgba(255,153,51,0.8);  
         }
+
+    slidesjs-previous 
+    {
+        top: 0; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+        left: 2%;
+    }
+
+    .slidesjs-next 
+    {
+        top: 25%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+        right: 2%;
+    }
 }/* media query */
