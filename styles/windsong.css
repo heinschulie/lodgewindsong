@@ -38,6 +38,11 @@ body,
     background-color: #4B4B4D; 
 }
 
+.images
+{
+    height: 100%; 
+}
+
 .content
 {
     position: relative; 
@@ -148,7 +153,7 @@ body,
     background-image: url(../images/content4.png); 
     background-size:cover; 
     background-repeat: no-repeat;  
-    height: 80%;
+    height: 100%;
     width: 100%;  
 }
 
@@ -157,15 +162,15 @@ body,
     background-color: rgba(0,0,0,0.7);
     width: 100%;
     max-height: 100%;
-    height: 50%; 
+    height: 100%; 
     overflow-y: auto; 
     transition: 0.5s; 
 }
 
-#textWrapper:hover
+/*#textWrapper:hover
 {
     height: 95% !important; 
-}
+}*/
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -299,29 +304,14 @@ body,
 
 /*@media screen and (max-width: 990px)*/
 /* -----------Tablet View----------- */ 
-@media only screen and (max-width : 650px) and (min-width : 481px)
-{
-    /*::-webkit-scrollbar 
+@media only screen and (max-width : 768px) and (min-width : 481px)
+{    
+    html,
+    body,
+    wrapper
     {
-    width: 12px;
-    }
- 
-    ::-webkit-scrollbar-track 
-    {
-        -webkit-box-shadow: initial;  
-        border-radius: initial; 
-    }
- 
-    ::-webkit-scrollbar-thumb 
-    {
-        border-radius: initial;
-        -webkit-box-shadow: initial; 
-    }*/
-
-    body
-    {       
-        height: 100.1%; 
-        overflow-y: auto;
+        height: 100%; 
+        overflow: hidden; 
     }
 
     html,
@@ -330,17 +320,34 @@ body,
     .carousel,
     .title,
     .content {
-	    width: 100%;
-        float: none;  
+	    width: 100%; 
+        float: none;   
         margin: 0; 
         -webkit-font-smoothing: antialiased;
     }
 
+    .carousel
+    {
+        position: relative;
+        min-height: 60%;
+        max-height: 60%;
+        height: 60%; 
+    }
+
     .content
     {
-        float: none;  
-        min-height: 100%;
-        margin-top: 50%;  
+        /*float: none;*/ 
+        position: relative;         
+        min-height: 40%;
+        max-height: 40%;
+        height: 40%; 
+    }
+
+    .navigation
+    {
+        min-height: 30%;
+        max-height: 30%;
+        height: 30%; 
     }
 
     .title
@@ -358,52 +365,183 @@ body,
             background-color: rgba(255,153,51,0.8);  
         }
 
-slidesjs-previous 
-{
-    top: 50%; 
-    left: 2%;
-}
 
-.slidesjs-next 
-{
-    top: 50%; 
-    right: 2%;
-}
+    .slidesjs-previous 
+    {
+        top: 45%; 
+        left: 2%;
+    }
+
+    .slidesjs-next 
+    {
+        top: 45%; 
+        right: 2%;
+    }
 } /*media query*/ 
 
  
-/* media query for phone */
+/* media query for phone - LANDSCAPE */
 
-@media screen and (max-width: 750px)
+@media screen and (max-width: 480px) and (min-width : 321px)
 {
     html,
     body,
     .wrapper,
-    .carousel,
     .title,
-    .content {
+    .content
+    {
 	    width: 100%;
         float: none;  
         margin: 0; 
         -webkit-font-smoothing: antialiased;
     }
 
+    .wrapper
+    {
+        overflow: visible; 
+        background-color: black; 
+    }
+
     .carousel
     {
-        min-height: 60%;
-        max-height: 60%; 
-        height: 60%;
+        width: 100%;
+        margin: 0 auto; 
+        min-height: 100%;
+        max-height: 120%; 
+        height: 110%;
+        float: none;  
     }
 
     .content
-    {
-        margin-top: 70%;  
+    {      
+        width: 100%;
+        height: auto; 
     }
 
     .navigation
     {
-        margin-top: 20%;    
+        width: 100%;
+        height: 40px;      
     }
+
+    .title
+    {
+        position: absolute;
+        bottom: 0;  
+        height: 20%; 
+        background-color: rgba(0,0,0,0.5); 
+        z-index: 100;  
+        transition: 0.5s; 
+    }
+        .title:hover
+        {
+            cursor: pointer; 
+            background-color: rgba(255,153,51,0.8);  
+        }
+
+    .slidesjs-previous 
+    {
+        left: 2%;
+        top: 35%;
+    }
+
+    .slidesjs-next 
+    {
+        right: 2%;
+        top: 35%; 
+    }
+}
+
+/* media query for phone - PORTRAIT */
+
+ @media screen and (max-width: 320px)
+{
+    .wrapper
+    {
+        overflow: visible;  
+    }
+
+    html,
+    body,
+    .wrapper,
+    .carousel,
+    .title,
+    .content {
+	    width: 100%; 
+        float: none;  
+        margin: 0; 
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .wrapper
+    {
+        overflow: visible;  
+    }
+
+    .carousel
+    {
+        min-height: 45%;
+        max-height: 45%; 
+        height: 45%;
+    }
+
+    .content
+    {
+        min-height: initial; 
+        max-height: initial; 
+        height: auto; 
+    }
+
+    .navigation
+    {
+        min-height: 50px; 
+        max-height: 50px; 
+        height: 50px;     
+    }
+
+    .text
+    {     
+        height: auto; 
+        width: 100%;  
+    }
+
+#textWrapper
+{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    max-height: initial; 
+    height: auto; 
+    overflow: initial;   
+    transition: 0.5s; 
+}
+
+
+#description
+{
+    font-family: 'Alegreya Sans', sans-serif; 
+    width: 80%; 
+    margin: auto; 
+    text-align: left; 
+    word-wrap:break-word;
+    word-spacing: normal; 
+    line-height: normal; 
+    font-size: 1em; 
+}
+
+    #description span
+    {
+        /*font-weight: bold;*/ 
+        font-size: 1em; 
+        color: white; 
+    }
+    #description .spantitle
+    {
+        /*font-weight: bold;*/ 
+        font-family: 'Dancing Script', Gabriola, cursive;
+        font-size: 1em; 
+        color: rgba(255,153,51,0.8);
+    }
+
 
     .title
     {
@@ -419,57 +557,10 @@ slidesjs-previous
             cursor: pointer; 
             background-color: rgba(255,153,51,0.8);  
         }
-}/* media query */
 
- @media screen and (max-width: 480px)
-{
-    html,
-    body,
-    .wrapper,
-    .carousel,
-    .title,
-    .content {
-	    width: 100%;
-        float: none;  
-        margin: 0; 
-        -webkit-font-smoothing: antialiased;
-    }
-
-    .carousel
+    .slidesjs-previous 
     {
-        min-height: 30%;
-        max-height: 30%; 
-        height: 30%;
-    }
-
-    .content
-    {
-        background-position-y: top 20%; 
-    }
-
-    .navigation
-    {
-        margin-top: 30%;    
-    }
-
-    .title
-    {
-        position: absolute;
-        top: 0;  
-        height: 20%; 
-        background-color: rgba(0,0,0,0.5); 
-        z-index: 100;  
-        transition: 0.5s; 
-    }
-        .title:hover
-        {
-            cursor: pointer; 
-            background-color: rgba(255,153,51,0.8);  
-        }
-
-    slidesjs-previous 
-    {
-        top: 0; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
+        top: 25%; /* adjust this between 45 to 50 based on the size of your arrow to get the "vertically middle" position */
         left: 2%;
     }
 

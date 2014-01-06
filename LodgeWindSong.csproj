@@ -69,8 +69,7 @@
     <Content Include="images\irongrip_%402X.png" />
     <Content Include="images\notebook_%402X.png" />
     <Content Include="images\office_%402X.png" />
-    <Content Include="images\tex2res4_%402X.png" />
-    <Content Include="windsong.aspx" />
+    <Content Include="default.aspx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
     <Content Include="images\3.jpg" />
@@ -79,9 +78,6 @@
     <Content Include="images\aloe.ico" />
     <Content Include="images\attractions.png" />
     <Content Include="images\contact.png" />
-    <Content Include="images\content1.png" />
-    <Content Include="images\content2.png" />
-    <Content Include="images\content3.png" />
     <Content Include="images\content4.png" />
     <Content Include="images\imgnav.png" />
     <Content Include="images\rates.png" />
@@ -92,12 +88,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="windsong.aspx.cs">
-      <DependentUpon>windsong.aspx</DependentUpon>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="windsong.aspx.designer.cs">
-      <DependentUpon>windsong.aspx</DependentUpon>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

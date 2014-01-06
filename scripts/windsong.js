@@ -7,7 +7,6 @@
 
 $(function () {
     $("#attractions").click(function () {
-        $("#textWrapper").css("height", "48%");
         $("#description").html(
             "<br>" +
             "<span class='spantitle'>" + "Activities and nearby attractions:" + "</span>" + "<br> <br> <br>" +
@@ -53,7 +52,6 @@ $(function () {
 
 $(function () {
     $("#accommodation").click(function () {
-        $("#textWrapper").css("height", "45%");
         $("#description").html(
         "<br>" +
         "<span class='spantitle'>" + "Rates:" + "</span>" + "<br>" + "<br>" +
@@ -88,7 +86,6 @@ $(function () {
 
 $(function () {
     $("#contact").click(function () {
-        $("#textWrapper").css("height", "32%");
         $("#description").html(
         "<br /> <span class='spantitle'> Contact us </span> <br> <br> <span> Contact person: Desiree Schoeman <br>" +
             "Email: info@lodgewindsong.co.za <br> Tel: 0823297710 or 078 683 9857 </span>"
@@ -99,7 +96,6 @@ $(function () {
 
 $(function () {
     $("#title").click(function () {
-        $("#textWrapper").css("height", "50%");
         $("#description").html(
             "<br />" +
                         "<span class='spantitle'>Welcome to Windsong Lodge..." +

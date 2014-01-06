@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="windsong.aspx.cs" Inherits="LodgeWindSong._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="LodgeWindSong._default" %>
 
 <!DOCTYPE html>
 

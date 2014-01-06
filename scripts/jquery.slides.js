@@ -213,7 +213,8 @@
       });
       width = $element.width();
         //height = (this.options.height / this.options.width) * width;
-      height = width / 1.262;
+        //height = width / 1.262;
+      height = $('.carousel').height();
       this.options.width = width;
       this.options.height = height;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
