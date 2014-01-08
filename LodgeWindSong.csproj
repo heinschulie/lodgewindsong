@@ -66,8 +66,6 @@
     <Content Include="images\8.jpg" />
     <Content Include="images\9.jpg" />
     <Content Include="images\binding_dark_%402X.png" />
-    <Content Include="images\irongrip_%402X.png" />
-    <Content Include="images\notebook_%402X.png" />
     <Content Include="images\office_%402X.png" />
     <Content Include="default.aspx" />
     <Content Include="images\1.jpg" />
