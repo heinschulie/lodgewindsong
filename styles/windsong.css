@@ -305,7 +305,7 @@ body,
 
 /*@media screen and (max-width: 990px)*/
 /* -----------Tablet View----------- */ 
-@media only screen and (max-width : 768px) and (min-width : 481px)
+@media only screen and (max-width : 768px) and (min-width : 480px) and (orientation:portrait)
 {    
     html,
     body,
@@ -383,7 +383,7 @@ body,
  
 /* media query for phone - LANDSCAPE */
 
-@media screen and (max-width: 480px) and (min-width : 321px)
+@media screen and (max-width: 480px) and (min-width : 320px) and (orientation:landscape)
 {
     html,
     body,
@@ -455,11 +455,12 @@ body,
 
 /* media query for phone - PORTRAIT */
 
- @media screen and (max-width: 320px)
+ @media screen and (max-width: 320px) and (orientation:portrait)
 {
     .wrapper
     {
         overflow: visible;  
+        background-image:url(../images/binding_dark_@2X.png);
     }
 
     html,
@@ -499,7 +500,10 @@ body,
         max-height: 50px; 
         height: 50px;     
     }
-
+    /*.navButton
+    {
+        opacity: 1; 
+    }*/
     .text
     {     
         height: auto; 
@@ -542,7 +546,6 @@ body,
         font-size: 1em; 
         color: rgba(255,153,51,0.8);
     }
-
 
     .title
     {
